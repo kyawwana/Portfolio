@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 2px 10px 0px rgb(0, 0, 0, 0.10);
+    position: fixed;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img {
+    width: 71px;
+    cursor: pointer;
+}
+
+nav ul {
+    width: 470px;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav .greeting {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(113, 216, 113);
+    font-weight: 100;
+    font-size: 1rem;
+    border-bottom: 2px solid rgb(113, 166, 113);
+    padding-bottom: 2px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 18px;
+}
+
+nav ul li a:hover {
+    background-color: lightgreen;
+    color: white;
+    transition: all 0.3s;
+    border-radius: 28px;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .first {
+    width: 85%;
+    height: 650px;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 80px;
+}
+
+#home .model {
+    width: 500px;
+
+}
+
+#home .about {
+    width: 500px;
+    height: 300px;
+    /* background-color: blueviolet; */
+}
+
+#home .first .model img {
+    width: 100%;
+    padding-bottom: 70px;
+    object-fit: contain;
+}
+
+#home .first .about h1 {
+    color: #333;
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+#home .first .about p {
+    color: #00000050;
+    font-size: 17px;
+    line-height: 25px;
+
+    margin-bottom: 20px;
+
+}
+
+#home .first .about a {
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: lightgreen;
+    color: #fff;
+    font-weight: 100;
+    border-radius: 25px;
+
+    padding: 10px 30px;
+}
+
+#home .first .about a:hover {
+    background-color: rgb(125, 192, 62);
+    transition: all 0.1s;
+
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .second {
+    width: 85%;
+    height: 600px;
+    /* background-color: lightblue; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#skills .second .skill-content {
+    width: 350px;
+    height: 500px;
+    /* background-color: aquamarine; */
+}
+
+#skills .second .skill-content span {
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 1px;
+    box-shadow: -14px -11px 5px -9px rgba(168,112,112,0.28);
+    
+    /* padding: 10px 10px;
+    border-radius: 28px;
+
+    background-color: lightgreen; */
+}
+
+#skills .second .skill-content h1 {
+    text-transform: capitalize;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 3rem;
+
+    box-shadow: 10px 10px 5px -5px rgba(168,112,112,0.55);
+    padding-left: 10px;
+}
+
+.skill-content .skill-letter {
+    width: 100%;
+    height: 125px;
+    /* background-color: lightslategray; */
+
+    display: flex;
+    margin-top: 22px;
+}
+
+.skill-content .skill-letter .icon {
+    width: 20%;
+    height: 100%;
+    /* background-color: lightgreen; */
+}
+
+.skill-letter .icon i {
+    width: 40px;
+    height: 40px;
+    background-color: silver;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 15px;
+}
+
+.fa-html5 {
+    color: red;
+}
+
+.fa-css3-alt {
+    color: blue;
+}
+
+.fa-js-square {
+    color: chocolate;
+}
+
+.skill-content .skill-letter .para {
+    width: 80%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.skill-content .skill-letter .para h3 {
+    font-size: 1rem;
+}
+
+.skill-content .skill-letter .para p {
+    color: brown;
+    line-height: 1rem;
+    font-size: 0.9rem;
+
+    margin-top: 12px;
+}
+
+#skills .second .skill-photo {
+    width: 600px;
+    height: 420px;
+    /* background-color: aquamarine; */
+}
+
+#skills .second img {
+    width: 100%;
+    height: 100%;
+}
+
+#recent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+#recent .third {
+    width: 85%;
+    height: 700px;
+    /* background-color: lightgreen; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 70px;
+}
+
+#recent .third .recent-contect {
+    width: 700px;
+    height: 150px;
+    /* background-color: lightblue; */
+}
+
+#recent .third .recent-contect span {
+    /* color: lightgreen; */
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#recent .third .recent-contect h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+#recent .third .recent-photo {
+    /* width: 800px;
+    height: 440px; */
+
+    width: 1000px;
+    height: 500px;
+    /* background-color: coral; */
+}
+
+#recent .third .recent-photo img {
+    /* width: 1100px;
+    height: 600px; */
+
+    width: 100%;
+    height: 100%;
+
+}
+
+#recent .third .recent-btn {
+    width: 400px;
+    height: 60px;
+    /* background-color: dimgray; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recent .third .recent-btn a {
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+
+    padding: 10px 48px;
+    background-color: lightgreen;
+    border-radius: 23px;
+    margin-bottom: 40px;
+}
+
+#recent .third .recent-btn a:hover {
+    background: rgb(125, 192, 62);
+    transition: all 0.2s;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#client .fourth {
+    width: 85%;
+    height: 500px;
+    /* background-color: brown; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#client .fourth .client-content {
+    width: 500px;
+    height: 100px;
+
+    /* background-color: lightblue; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#client .fourth .client-content span {
+    text-transform: uppercase;
+    /* color: silver; */
+    letter-spacing: 1px;
+
+}
+
+#client .fourth .client-content h1 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 3rem;
+
+    font-weight: 200;
+}
+
+#client .fourth .client-container {
+    width: 1000px;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    /* background-color: lightgreen; */
+}
+
+#client .fourth .client-container .client-box {
+    width: 300px;
+    height: 320px;
+
+    box-shadow: 0px 0px 3px 1px rgba(105, 101, 101, 0.5);
+
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+}
+
+#client .fourth .client-container .client-box:hover {
+    background-color: rgb(190, 227, 190);
+    /* margin-bottom: 13px; */
+    transform: translateY(-10px);
+    transition: all 0.2s;
+}
+
+.client-container .client-box img {
+    width: 85px;
+    height: 85px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.client-container .client-box .stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margin-bottom: 13px; */
+}
+
+.fa-star {
+    color: rgb(109, 223, 22);
+}
+
+.client-container .client-box p {
+    width: 240px;
+
+    /* background-color: lightblue; */
+    font-size: 0.9rem;
+    color: #00000098;
+    text-align: center;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    line-height: 1.6rem;
+
+    /* margin: 15px 0px; */
+
+    /*padding: 6px 30px; */
+}
+
+.client-container .client-box a {
+    text-decoration: none;
+    color: #fff;
+    background-color: lightgreen;
+    letter-spacing: 1px;
+
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+.client-container .client-box a:hover {
+    background-color: rgb(125, 192, 62);
+    color: white;
+
+    transition: all 0.2s;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margin-top: 30px; */
+}
+
+#contact .fifth {
+    width: 85%;
+    height: 600px;
+    /* background-color: lightblue; */
+
+    margin-top: 120px;
+
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* #contact .fifth .image {
+    width: 380px;
+    height: 500px;
+    background-color: aqua; 
+} */
+
+
+#contact .fifth img{
+    width: 400px;
+    /* height: 300px; */
+    /* margin-top: 100px; */
+}
+
+#contact .fifth .contact-text {
+    width: 500px;
+    height: 80px;
+    /* background-color: blueviolet; */
+}
+
+#contact .fifth .contact-text h1 {
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    font-weight: 100;
+    text-align: center;
+
+    /* padding-top: 4px; */
+}
+
+
+#contact .fifth .inputbox {
+    width: 350px;
+    height: 50px;
+    border-radius: 25px;
+    /* background-color: lightgreen; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.31);
+    margin-bottom: 50px;
+}
+
+#contact .fifth .inputbox:hover {
+    /* background-color: silver; */
+    transition: all 0.2s;
+}
+
+#contact .fifth .inputbox input {
+    outline: none;
+    border: none;
+    text-align: center;
+
+    padding: 4px 5px;
+}
+
+#contact .fifth .inputbox a {
+    background-color: lightgreen;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+    padding: 5px 15px;
+    border-radius: 20px;
+    /* margin-left: 25px; */
+}
+
+#contact .fifth .inputbox a:hover {
+    letter-spacing: 0.80px;
+    /* background-color: lightgreen; */
+    transition: all 0.2s;
+}
+
+.email {
+    border-radius: 13px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+footer span {
+    color: #333;
+    font-size: 0.9rem;
+}
